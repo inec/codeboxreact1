@@ -1,18 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { SkiDayCount } from "./components/SkiDayCount";
+import React from 'react'
+import { render } from 'react-dom'
+import { SkiDayCount } from './components/SkiDayCount'
 
-import "./stylesheets/ui.scss";
-import "./stylesheets/globals.scss";
-import "./stylesheets/index.scss";
+window.React = React
 
-function App() {
-  return (
-    <div className="App">
-      <SkiDayCount />
-    </div>
-  );
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+render(
+	<SkiDayCount total={50}
+				 powder={20}
+				 backcountry={10}
+				 goal={100}/>,
+	document.getElementById('react-container')
+)
