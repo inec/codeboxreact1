@@ -16,25 +16,25 @@ const calcGoalProgress=(total,goal)=>{
 
 //export const SkiDayCount  extends Component{
 
-export const SkiDayCount =(props)=>(
+export const SkiDayCount =({total,powder,backcountry,goal})=>(
 	//render() {
 		//return (
 			<div className="ski-day-count">
 				<div className="total-days">
-					<span>{props.total}</span>
+					<span>{total}</span>
 					<span>dayss</span>
 				</div>
 				<div className="powder-days">
-					<span>{props.powder}</span>
+					<span>{powder}</span>
 					<span>dasy</span>
 				</div>
 				<div className="backcountry-days">
-					<span>{props.backcountry}</span>
+					<span>{backcountry}</span>
 					<span>day</span>
 				</div>
 				<div>
 					<span>{calcGoalProgress(
-						props.total,props.goal)} </span>
+						total,goal)} </span>
 				</div>
 			</div>
 		)
