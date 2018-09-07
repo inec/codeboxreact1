@@ -1,5 +1,8 @@
-import {Component} from 'react'
+//import {Component} from 'react'
 import '../stylesheets/ui.scss'
+import {MdTerrain} from 'react-icons/md/'
+import  {TiWeatherSnow} from 'react-icons/ti/'
+import { FiCalendar}   from 'react-icons/fi/'
 
 const percentToDecimal=(decimal)=>{
 	return((decimal * 100 )+'%')
@@ -22,15 +25,18 @@ export const SkiDayCount =({total,powder,backcountry,goal})=>(
 			<div className="ski-day-count">
 				<div className="total-days">
 					<span>{total}</span>
+				<FiCalendar />
 					<span>dayss</span>
 				</div>
 				<div className="powder-days">
 					<span>{powder}</span>
+					<TiWeatherSnow />
 					<span>dasy</span>
 				</div>
 				<div className="backcountry-days">
 					<span>{backcountry}</span>
-					<span>day</span>
+					<MdTerrain />
+					<span>sday</span>
 				</div>
 				<div>
 					<span>{calcGoalProgress(
