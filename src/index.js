@@ -1,11 +1,16 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { SkiDayCount } from './components/SkiDayCount'
+import { SkiDayCount } from './components/SkiDayCount-createClass'
 import { SkiDayList} from './components/SkiDayList'
 
 window.React = React
 
 render(
+	<SkiDayCount />,
+	document.getElementById('react-container')
+)
+
+/*render(
 	<SkiDayList days={
 		[
 			{
@@ -32,4 +37,4 @@ render(
 
 				 ,
 	document.getElementById('react-container')
-)
+)*/ 
