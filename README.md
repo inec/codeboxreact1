@@ -8,3 +8,8 @@
     return state;
   }
 ```
+Use const for Action Types
+```
+const LOGIN = 'LOGIN';
+const LOGOUT = 'LOGOUT';
+```
