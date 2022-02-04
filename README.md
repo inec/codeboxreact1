@@ -20,3 +20,10 @@ function sayHi() {
 }
 store.subscribe(sayHi);
 ```
+
+```
+const rootReducer = Redux.combineReducers({
+  count: counterReducer,
+  auth: authReducer
+});
+```
