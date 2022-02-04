@@ -13,3 +13,10 @@ Use const for Action Types
 const LOGIN = 'LOGIN';
 const LOGOUT = 'LOGOUT';
 ```
+Register a Store Listener
+```
+function sayHi() {
+  count+=1;
+}
+store.subscribe(sayHi);
+```
