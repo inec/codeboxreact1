@@ -27,3 +27,13 @@ const rootReducer = Redux.combineReducers({
   auth: authReducer
 });
 ```
+```
+case ADD_NOTE:
+      return action.text;
+      // change code below this line
+  return {
+    type: ADD_NOTE,
+    text: note
+  };
+  // change code above this line
+      ```
